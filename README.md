@@ -1,5 +1,14 @@
 # Amazon Customer Reviews Sentiment Analysis
 
+<p>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/DistilBERT-Fine--tuned-FFD21E?logo=huggingface&logoColor=black" />
+  <img src="https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+</p>
+
 A comprehensive, production-ready sentiment analysis platform for Amazon product reviews. This project leverages fine-tuned DistilBERT models, real-time streaming with Kafka, vector search with Elasticsearch, and a modern FastAPI web interface.
 
 ## 🚀 Features
