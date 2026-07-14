@@ -24,18 +24,21 @@ A comprehensive, production-ready sentiment analysis platform for Amazon product
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────┐    ┌──────────────┐    ┌─────────────────┐
-│   FastAPI Web   │───▶│    Kafka     │───▶│   MongoDB       │
-│   Interface     │    │   Producer   │    │   Database      │
-└─────────────────┘    └──────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌──────────────┐    ┌─────────────────┐
-│  DistilBERT     │    │   Kafka      │    │  Elasticsearch  │
-│  Sentiment      │    │  Consumer    │    │  Vector Search  │
-│  Analysis       │    │              │    │                 │
-└─────────────────┘    └──────────────┘    └─────────────────┘
+```mermaid
+flowchart LR
+    UI["FastAPI Web UI"] -->|"submit review"| Prod["Kafka Producer"]
+    Prod --> Topic(["Kafka Topic"])
+    Topic --> Cons["Kafka Consumer"]
+
+    Cons --> Pre["Preprocess"]
+    Pre --> Model["DistilBERT<br/>sentiment (1–5★)"]
+    Model --> Emb["Embeddings"]
+
+    Model --> Mongo[("MongoDB")]
+    Emb --> ES[("Elasticsearch<br/>vector search")]
+
+    Mongo --> UI
+    ES -->|"similar reviews"| UI
 ```
 
 ## 📋 Prerequisites
