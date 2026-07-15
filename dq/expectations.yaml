@@ -1,0 +1,31 @@
+# Declarative data-quality expectations for the reviews dataset.
+# Evaluated by dq/checks.py. Airflow gates the pipeline on the result.
+suite: reviews_silver
+checks:
+  - name: review_id_not_null
+    type: not_null
+    column: review_id
+
+  - name: review_id_unique
+    type: unique
+    column: review_id
+
+  - name: rating_in_range
+    type: between
+    column: rating
+    min: 1
+    max: 5
+
+  - name: review_text_min_length
+    type: min_str_length
+    column: review_text
+    min: 3
+
+  - name: review_date_not_in_future
+    type: not_future
+    column: review_date
+
+  - name: category_in_set
+    type: in_set
+    column: category
+    values: ["Electronics", "Home & Kitchen", "Books", "Fashion", "Beauty"]

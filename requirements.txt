@@ -1,18 +1,46 @@
+# ── Core data / ML ────────────────────────────────────────
 pandas
 numpy
 scikit-learn
-matplotlib
-seaborn
-tqdm
-nltk
-transformers
-datasets
 scipy
+pyarrow
+
+# ── NLP / sentiment ───────────────────────────────────────
+transformers
 torch
+datasets
+nltk
+
+# ── Ingestion & streaming ─────────────────────────────────
 kafka-python
+
+# ── Data lake (MinIO / S3) ────────────────────────────────
+minio
+s3fs
+
+# ── Processing ────────────────────────────────────────────
+pyspark==3.5.1
+
+# ── Warehouse ─────────────────────────────────────────────
+psycopg2-binary
+SQLAlchemy
+
+# ── Orchestration & tracking ──────────────────────────────
+apache-airflow==2.9.3
+mlflow
+
+# ── Data quality ──────────────────────────────────────────
+PyYAML
+
+# ── Serving & dashboard ───────────────────────────────────
 fastapi
 uvicorn[standard]
+pydantic
 jinja2
 python-multipart
+requests
+streamlit
+
+# ── Document store + search ───────────────────────────────
 pymongo
-elasticsearch==8.7.0
+elasticsearch==8.13.0

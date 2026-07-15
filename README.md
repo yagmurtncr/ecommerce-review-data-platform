@@ -1,266 +1,159 @@
-# Amazon Customer Reviews Sentiment Analysis
+# 🛒 E-Commerce Review Intelligence Platform
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/DistilBERT-Fine--tuned-FFD21E?logo=huggingface&logoColor=black" />
-  <img src="https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" />
+  <img src="https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MinIO-C72E49?logo=minio&logoColor=white" />
   <img src="https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/DistilBERT-FFD21E?logo=huggingface&logoColor=black" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg" />
 </p>
 
-A comprehensive, production-ready sentiment analysis platform for Amazon product reviews. This project leverages fine-tuned DistilBERT models, real-time streaming with Kafka, vector search with Elasticsearch, and a modern FastAPI web interface.
+> **End-to-end batch + real-time data platform for e-commerce reviews.**
+> Kafka streaming, a Spark-powered **Bronze → Silver → Gold** data lake on MinIO,
+> **data-quality gates**, a **PostgreSQL star schema**, and a sentiment / topic /
+> anomaly ML layer — all served through FastAPI, Elasticsearch and a Streamlit dashboard.
 
-## 🚀 Features
+This project began as a DistilBERT sentiment API and was **re-engineered into a full
+data-engineering platform** to demonstrate ingestion, lake modelling, orchestration,
+data quality and dimensional warehousing — not just model inference.
 
-- **🤖 Fine-tuned DistilBERT Model**: Accurately classifies Amazon reviews into 1-5 star ratings
-- **⚡ Real-time Streaming**: Kafka-based message queuing for scalable processing
-- **🔍 Vector Search**: Elasticsearch-powered similarity search for finding related reviews
-- **🌐 Modern Web Interface**: FastAPI-powered interactive web application
-- **📊 Comprehensive Analytics**: Detailed evaluation metrics and visualizations
-- **🐳 Docker Support**: Complete containerized deployment with Docker Compose
-- **💾 MongoDB Integration**: Scalable data storage and retrieval
-- **🔄 Automated Pipeline**: End-to-end data preprocessing and model training
+---
 
 ## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    UI["FastAPI Web UI"] -->|"submit review"| Prod["Kafka Producer"]
-    Prod --> Topic(["Kafka Topic"])
-    Topic --> Cons["Kafka Consumer"]
+    CSV["CSV"] --> BATCH["batch_ingest"] --> BRONZE["🥉 Bronze"]
+    APISRC["Review API"] --> STREAM["stream_producer"] --> KAFKA(["Kafka"])
+    KAFKA --> SS["Spark Streaming<br/>(sentiment)"] --> ES[("Elasticsearch")]
 
-    Cons --> Pre["Preprocess"]
-    Pre --> Model["DistilBERT<br/>sentiment (1–5★)"]
-    Model --> Emb["Embeddings"]
-
-    Model --> Mongo[("MongoDB")]
-    Emb --> ES[("Elasticsearch<br/>vector search")]
-
-    Mongo --> UI
-    ES -->|"similar reviews"| UI
+    BRONZE --> B2S["Spark<br/>bronze to silver"] --> SILVER["🥈 Silver"]
+    SILVER --> DQ{"DQ gate"}
+    DQ -->|pass| S2G["Spark<br/>silver to gold"] --> GOLD["🥇 Gold"]
+    SILVER --> ML["Sentiment · Topics · Anomaly"]
+    GOLD --> STAR["⭐ PostgreSQL<br/>star schema"]
+    ML --> STAR
+    STAR --> APIA["FastAPI"] --> DASH["Streamlit"]
+    ES --> APIA
 ```
 
-## 📋 Prerequisites
+Full write-up: **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
 
-- Python 3.8+
-- Docker & Docker Compose
-- 8GB+ RAM (for model training)
-- CUDA-compatible GPU (optional, for faster training)
+---
 
-## 🛠️ Installation
+## ✨ What it demonstrates
 
-### Option 1: Docker Setup (Recommended)
+**Data Engineering**
+- **Batch & streaming ingestion** (CSV + a mock review API into Kafka)
+- **Medallion data lake** on MinIO/S3 — Bronze (raw) / Silver (clean) / Gold (marts)
+- **Apache Spark** batch jobs + **Structured Streaming** for real-time sentiment
+- **Data quality gate** — declarative expectations, pipeline fails on violation
+- **Dimensional modelling** — a PostgreSQL **star schema** (`fact_reviews` + 4 dims)
+- **Airflow** DAG orchestrating the nightly batch pipeline
+- Containerised with **Docker Compose**; experiment tracking via **MLflow**
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yagmurtncr/Amazon-Customer-Reviews-Sentiment-Analysis.git
-   cd Amazon_Ratings
-   ```
+**Data Science**
+- **Sentiment** (fine-tuned DistilBERT, 1–5 stars) with a lexicon fallback
+- **Topic analysis** (TF-IDF + KMeans) — surfaces quality / shipping / price / …
+- **Fake-review & anomaly detection** — rating vs. sentiment mismatch, near-duplicate
+  spam, and IsolationForest outliers
+- **Vector search** over reviews in Elasticsearch (dense embeddings)
 
-2. **Start all services:**
-   ```bash
-   cd services
-   docker-compose up -d
-   ```
+---
 
-3. **Wait for services to initialize** (about 2-3 minutes)
+## 📁 Repository layout
 
-4. **Initialize Elasticsearch:**
-   ```bash
-   python services/elasticsearch_init.py
-   ```
+```text
+config/       central env-driven settings + client factories
+ingestion/    synthetic generator, mock review API, batch + Kafka stream
+lake/         Bronze/Silver/Gold S3 helpers
+spark/        bronze->silver, silver->gold, structured-streaming sentiment
+dq/           declarative data-quality suite + engine
+warehouse/    star-schema DDL + loader (PostgreSQL)
+ml/           sentiment, topic model, anomaly detection, training
+serving/      Elasticsearch vector indexing
+airflow/dags/ batch pipeline orchestration
+api/          FastAPI analytics service
+dashboard/    Streamlit dashboard
+docs/         architecture
+```
 
-### Option 2: Local Development Setup
+---
 
-1. **Clone and setup:**
-   ```bash
-   git clone https://github.com/yagmurtncr/Amazon-Customer-Reviews-Sentiment-Analysis.git
-   cd Amazon_Ratings
-   python -m venv .venv
-   .venv\Scripts\activate  # Windows
-   # source .venv/bin/activate  # Linux/Mac
-   ```
+## 🚀 Quickstart
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Start services manually:**
-   - MongoDB: `mongod`
-   - Elasticsearch: `elasticsearch`
-   - Kafka + Zookeeper: Use Docker Compose or local installation
-
-## 🚀 Quick Start
-
-### 1. Data Preparation
 ```bash
-# Import CSV data to MongoDB
-python services/csv_to_mongo.py
+# 1. clone & configure
+cp .env.example .env
 
-# Preprocess and split data
-python preprocess.py
+# 2. start the stack (Kafka, MinIO, Postgres, Spark, ES, Mongo, MLflow, API, dashboard)
+docker compose up -d
+
+# 3. run the batch pipeline end-to-end
+make seed        # generate a synthetic reviews CSV
+make batch       # ingest -> data-quality gate -> warehouse load
+
+# 4. explore
+#   Dashboard     -> http://localhost:8501
+#   Analytics API -> http://localhost:8000/docs
+#   Kafka UI      -> http://localhost:8080
+#   MinIO console -> http://localhost:9001   (minioadmin / minioadmin)
+#   MLflow        -> http://localhost:5000
 ```
 
-### 2. Model Training
+Real-time path:
+
 ```bash
-# Train DistilBERT model
-python train_model.py
+make stream                                # produce reviews into Kafka
+spark-submit spark/streaming_sentiment.py  # score them as they arrive
 ```
 
-### 3. Start the Web Application
+Individual data-science stages (no infra required):
+
 ```bash
-# Start FastAPI server
-uvicorn app:app --reload --host 0.0.0.0 --port 8000
+make dq          # data-quality suite
+make topics      # TF-IDF topic analysis
+make anomalies   # fake-review / anomaly detection
 ```
 
-### 4. Access the Application
-- **Web Interface**: http://localhost:8000
-- **API Documentation**: http://localhost:8000/docs
-- **Kafka UI**: http://localhost:8080 (if using Docker)
+---
 
-## 📁 Project Structure
+## ✅ What's verified
 
-```
-Amazon_Ratings/
-├── 📄 app.py                    # FastAPI web application
-├── 📄 train_model.py           # Model training script
-├── 📄 preprocess.py            # Data preprocessing
-├── 📄 evaluate.py             # Model evaluation
-├── 📄 postprocess.py          # Inference utilities
-├── 📄 test_model.py           # Model testing
-├── 📁 services/                # Microservices
-│   ├── 📄 docker-compose.yml  # Docker services
-│   ├── 📄 db_config.py        # MongoDB configuration
-│   ├── 📄 kafka_producer.py   # Kafka message producer
-│   ├── 📄 kafka_consumer.py   # Kafka message consumer
-│   ├── 📄 embedding_utils.py  # Vector embeddings
-│   ├── 📄 elasticsearch_init.py # ES initialization
-│   ├── 📄 csv_to_mongo.py     # Data import utility
-│   └── 📄 kafbat-config.yml   # Kafka UI configuration
-├── 📁 amazon_data/            # Raw data files (gitignored)
-├── 📁 sentiment_model_distilbert/ # Model checkpoints (gitignored)
-├── 📁 results/                # Evaluation outputs (gitignored)
-├── 📁 templates/              # HTML templates
-├── 📁 static/                 # Static assets (CSS, JS)
-└── 📄 requirements.txt        # Python dependencies
-```
+The **infra-free components are tested and working**: synthetic generation, the
+data-quality engine (6/6 checks), lexicon sentiment, TF-IDF topic modelling and
+anomaly detection all run from a clean checkout (see the commands above). The
+Spark / Kafka / warehouse stages are written against the bundled `docker-compose`
+stack and run with `make up` + `make batch`.
 
-> **Note**: `amazon_data/`, `sentiment_model_distilbert/`, and `results/` folders are gitignored due to large file sizes. These will be created when you run the data preparation and training scripts.
+> **Data honesty:** all reviews are **synthetically generated** with transparent
+> rules (`ingestion/synthetic_reviews.py`) — no scraped or private data. A small,
+> controlled share of anomalies is injected on purpose so the fake-review detector
+> has something to find.
 
-## ⚙️ Configuration
+---
 
-### Environment Variables
-Create a `.env` file in the root directory:
-```env
-# MongoDB Configuration
-MONGO_USERNAME=mongoadmin
-MONGO_PASSWORD=secret
-MONGO_HOST=localhost
-MONGO_PORT=27017
-MONGO_DB_NAME=amazon_ratings
+## 🛠️ Tech stack
 
-# Kafka Configuration
-KAFKA_BOOTSTRAP_SERVERS=localhost:9092
-KAFKA_TOPIC_NAME=reviews
+`Python` · `Apache Kafka` · `Apache Spark (batch + Structured Streaming)` ·
+`Apache Airflow` · `PostgreSQL` · `MinIO (S3)` · `MongoDB` · `Elasticsearch` ·
+`MLflow` · `FastAPI` · `Streamlit` · `Docker Compose` · `DistilBERT / scikit-learn`
 
-# Elasticsearch Configuration
-ELASTICSEARCH_URL=http://localhost:9200
-ELASTICSEARCH_INDEX=reviews_vector
+---
 
-# Model Configuration
-MODEL_PATH=./sentiment_model_distilbert
-MAX_SEQUENCE_LENGTH=512
-```
+## 🗺️ Roadmap
 
-### Docker Services
-The `docker-compose.yml` includes:
-- **Kafka + Zookeeper**: Message streaming
-- **MongoDB**: Document database
-- **Elasticsearch**: Vector search engine
-- **Kafka UI**: Web interface for Kafka management
+- **v1 (this repo):** Kafka, MinIO lake, Spark, PostgreSQL star schema, DQ gate,
+  FastAPI, sentiment model, Docker Compose
+- **v2:** Great Expectations suite, richer Airflow SLAs, MLflow model registry,
+  BERTopic, Grafana boards, dbt models on the warehouse
 
-## 📊 API Endpoints
+---
 
-### Web Interface
-- `GET /` - Main sentiment analysis interface
-- `POST /predict` - Analyze review sentiment
+## 📄 License
 
-### REST API
-- `GET /docs` - Interactive API documentation
-- `GET /openapi.json` - OpenAPI specification
-
-## 🧪 Usage Examples
-
-### Web Interface
-1. Navigate to http://localhost:8000
-2. Enter an Amazon product review
-3. Click "Tahmin Et" to get sentiment analysis
-4. View similar reviews and confidence scores
-
-### Command Line Testing
-```bash
-# Test model with sample text
-python test_model.py
-
-# Evaluate model performance
-python evaluate.py
-```
-
-### Programmatic Usage
-```python
-from postprocess import predict_sentiment
-
-# Analyze sentiment
-result = predict_sentiment("This product is amazing!")
-print(result)  # {'distilbert': '★★★★☆'}
-```
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-1. **Kafka Connection Error**
-   ```bash
-   # Check if Kafka is running
-   docker-compose ps
-   # Restart Kafka
-   docker-compose restart kafka
-   ```
-
-2. **Elasticsearch Connection Error**
-   ```bash
-   # Check Elasticsearch status
-   curl http://localhost:9200
-   # Initialize index
-   python services/elasticsearch_init.py
-   ```
-
-3. **MongoDB Connection Error**
-   ```bash
-   # Check MongoDB connection
-   python services/test_MongoDB.py
-   ```
-
-4. **Model Loading Error**
-   ```bash
-   # Ensure model files exist
-   ls -la sentiment_model_distilbert/
-   # Retrain if necessary
-   python train_model.py
-   ```
-
-### Performance Optimization
-
-- **GPU Acceleration**: Install CUDA-compatible PyTorch
-- **Memory Management**: Adjust batch sizes in training scripts
-- **Caching**: Enable model caching for faster inference
-
-## 📈 Model Performance
-
-The fine-tuned DistilBERT model achieves:
-- **Accuracy**: ~85-90% on Amazon review classification
-- **Inference Speed**: ~50ms per prediction
-- **Model Size**: ~250MB (efficient for production)
-
+Released under the [MIT License](LICENSE).
