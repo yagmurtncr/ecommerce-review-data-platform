@@ -16,14 +16,14 @@ EMBED_DIM = 768
 
 @lru_cache(maxsize=1)
 def _load():
-    import torch  # noqa: F401
-    from transformers import AutoModel, AutoTokenizer
-
     if not os.path.isdir(settings.SENTIMENT_MODEL_PATH):
         raise RuntimeError(
             f"Model not found at {settings.SENTIMENT_MODEL_PATH}. "
             "Vector embeddings need the fine-tuned model; set SENTIMENT_MODEL_PATH."
         )
+    import torch  # noqa: F401
+    from transformers import AutoModel, AutoTokenizer
+
     tok = AutoTokenizer.from_pretrained(settings.SENTIMENT_MODEL_PATH)
     mdl = AutoModel.from_pretrained(settings.SENTIMENT_MODEL_PATH)
     mdl.eval()

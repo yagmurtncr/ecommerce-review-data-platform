@@ -42,7 +42,7 @@ def index_csv(csv_path: str, embed: bool = True):
     df = pd.read_csv(csv_path)
     scored = score_batch(df["review_text"].astype(str).tolist())
     n = 0
-    for (_, row), s in zip(df.iterrows(), scored):
+    for (_, row), s in zip(df.iterrows(), scored, strict=False):
         doc = {
             "review_id": row["review_id"],
             "review_text": row["review_text"],

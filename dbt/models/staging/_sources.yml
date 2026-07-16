@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: warehouse
+    description: "Star schema populated by warehouse/load_to_warehouse.py"
+    schema: public
+    tables:
+      - name: fact_reviews
+        description: "One row per review (grain)."
+        columns:
+          - name: review_id
+            tests: [not_null, unique]
+          - name: rating
+            tests:
+              - not_null
+              - accepted_values: { values: [1, 2, 3, 4, 5] }
+          - name: sentiment_stars
+            tests:
+              - accepted_values: { values: [1, 2, 3, 4, 5] }
+          - name: category_id
+            tests:
+              - relationships:
+                  to: source('warehouse', 'dim_category')
+                  field: category_id
+      - name: dim_category
+        columns:
+          - name: category_id
+            tests: [not_null, unique]
+      - name: dim_product
+        columns:
+          - name: product_id
+            tests: [not_null, unique]
+      - name: dim_date
+        columns:
+          - name: date_id
+            tests: [not_null, unique]

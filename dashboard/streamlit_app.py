@@ -62,7 +62,7 @@ with col_b:
 st.subheader("🔎 Live sentiment check")
 txt = st.text_input("Type a review to score:", "Fast shipping and great quality, love it!")
 if st.button("Score") and txt:
-    res = api_get(f"/predict") or {}
+    res = api_get("/predict") or {}
     # /predict is POST; call it directly
     try:
         res = requests.post(f"{API}/predict", json={"text": txt}, timeout=5).json()

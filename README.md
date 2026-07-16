@@ -1,6 +1,7 @@
 # 🛒 E-Commerce Review Intelligence Platform
 
 <p>
+  <img src="https://github.com/yagmurtncr/ecommerce-review-data-platform/actions/workflows/ci.yml/badge.svg" alt="CI" />
   <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" />
   <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" />
@@ -76,6 +77,8 @@ dq/           declarative data-quality suite + engine
 warehouse/    star-schema DDL + loader (PostgreSQL)
 ml/           sentiment, topic model, anomaly detection, training
 serving/      Elasticsearch vector indexing
+dbt/          dbt models + data tests on the warehouse
+tests/        pytest suite (offline components)
 airflow/dags/ batch pipeline orchestration
 api/          FastAPI analytics service
 dashboard/    Streamlit dashboard
@@ -137,11 +140,26 @@ stack and run with `make up` + `make batch`.
 
 ---
 
+## 🧪 Testing & quality
+
+```bash
+ruff check .     # lint (enforced in CI)
+pytest -q        # 13 unit tests, run in ~2s from a clean checkout
+```
+
+- **CI** — GitHub Actions runs `ruff` + `pytest` on every push & PR
+- **Unit tests** cover the synthetic generator, the data-quality engine (pass **and**
+  fail cases), sentiment, anomaly detection, and lake/config helpers
+- **dbt tests** enforce warehouse integrity (`not_null`, `unique`, `accepted_values`,
+  `relationships`) — see [`dbt/`](dbt/)
+
+---
+
 ## 🛠️ Tech stack
 
 `Python` · `Apache Kafka` · `Apache Spark (batch + Structured Streaming)` ·
 `Apache Airflow` · `PostgreSQL` · `MinIO (S3)` · `MongoDB` · `Elasticsearch` ·
-`MLflow` · `FastAPI` · `Streamlit` · `Docker Compose` · `DistilBERT / scikit-learn`
+`dbt` · `MLflow` · `FastAPI` · `Streamlit` · `Docker Compose` · `DistilBERT / scikit-learn` · `pytest` · `ruff`
 
 ---
 

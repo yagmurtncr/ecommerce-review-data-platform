@@ -1,15 +1,16 @@
-from transformers import (
-    AutoTokenizer,
-    AutoModelForSequenceClassification,
-    Trainer,
-    TrainingArguments
-)
-from datasets import Dataset
-from sklearn.metrics import accuracy_score
-import torch
 import logging
-from db_config import get_mongo_db
+
 import pandas as pd
+import torch
+from datasets import Dataset
+from db_config import get_mongo_db
+from sklearn.metrics import accuracy_score
+from transformers import (
+    AutoModelForSequenceClassification,
+    AutoTokenizer,
+    Trainer,
+    TrainingArguments,
+)
 
 logging.basicConfig(level=logging.INFO)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

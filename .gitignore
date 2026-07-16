@@ -87,3 +87,6 @@ secrets.json
 # Test files
 test_*.py
 *_test.py
+# Keep a tiny explorable sample committed
+!data/samples/
+!data/samples/reviews_sample.csv

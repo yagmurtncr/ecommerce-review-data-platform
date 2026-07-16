@@ -28,6 +28,7 @@ SQLAlchemy
 # ── Orchestration & tracking ──────────────────────────────
 apache-airflow==2.9.3
 mlflow
+dbt-postgres
 
 # ── Data quality ──────────────────────────────────────────
 PyYAML

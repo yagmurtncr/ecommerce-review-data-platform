@@ -1,0 +1,207 @@
+review_id,product_id,product_name,category,customer_id,rating,review_text,topic,review_date
+r_0000170,p_56190,Wool Scarf,Fashion,cust_00005,4,"For the price, This wool scarf — Great price compared to other stores. Pretty satisfied.",price,2025-03-10
+r_0000094,p_08249,Sunscreen,Beauty,cust_00002,1,"After a week, The packaging was damaged and the item was dented. Exactly what I expected.",packaging,2025-02-24
+r_0000033,p_52393,Turkish Grammar,Books,cust_00040,4,"So far, This turkish grammar — Returning was smooth and hassle-free. Five stars from me.",return,2024-04-04
+r_0000109,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00029,2,"Not gonna lie, This vacuum cleaner — Customer service never replied to my emails.",customer_service,2024-05-06
+r_0000148,p_12156,Hair Dryer,Beauty,cust_00043,5,Just received it — Support resolved my issue right away. Do better.,customer_service,2024-12-12
+r_0000194,p_70738,Leather Wallet,Fashion,cust_00004,2,"So far, This leather wallet — Poor quality, it broke after two days. Recommended.",product_quality,2024-10-22
+r_0000161,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00035,4,"Honestly, This vacuum cleaner — Came in neat, secure packaging.",packaging,2024-06-02
+r_0000093,p_06887,Kids Story,Books,cust_00035,5,"Overall, Support resolved my issue right away. Five stars from me.",customer_service,2024-12-06
+r_0000160,p_04220,Air Fryer,Home & Kitchen,cust_00044,5,"Overall, The air fryer is fine. Great price compared to other stores. Not sure I'd repurchase.",price,2025-04-28
+r_0000019,p_48072,USB-C Hub,Electronics,cust_00036,2,"After a week, Bought the usb-c hub. The delivery was delayed and no updates were given. Mixed feelings overall.",shipping,2025-08-07
+r_0000026,p_18490,Face Serum,Beauty,cust_00010,2,"Return was a nightmare, still waiting for a refund. Exactly what I expected.",return,2025-06-27
+r_0000147,p_08464,Running Shoes,Fashion,cust_00028,4,"So far, The running shoes is fine. Amazing value for money, worth every penny. Not sure I'd repurchase.",price,2025-03-24
+r_0000002,p_08249,Sunscreen,Beauty,cust_00009,1,The delivery was delayed and no updates were given. Not sure I'd repurchase.,shipping,2024-10-11
+r_0000174,p_08464,Running Shoes,Fashion,cust_00038,5,"Just received it — Shipping was super fast, arrived a day early. Pretty satisfied.",shipping,2024-02-03
+r_0000078,p_48072,USB-C Hub,Electronics,cust_00011,4,"After a week, The usb-c hub is fine. Easy return process, refund came fast. Do better.",return,2024-09-02
+r_0000003,p_26506,Knife Set,Home & Kitchen,cust_00002,5,"Honestly, This knife set — Works perfectly, exactly as described. Very happy. Pretty satisfied.",product_quality,2024-09-27
+r_0000177,p_20788,Cookbook,Books,cust_00028,4,"For the price, The cookbook is fine. Delivery was quick and well tracked. Recommended.",shipping,2024-03-16
+r_0000167,p_60892,Lipstick,Beauty,cust_00002,4,"For the price, Bought the lipstick. Returning was smooth and hassle-free. Not sure I'd repurchase.",return,2025-04-13
+r_0000199,p_08464,Running Shoes,Fashion,cust_00038,2,"Not gonna lie, This running shoes — Overpriced for what you get. Exactly what I expected.",price,2024-01-28
+r_0000079,p_18490,Face Serum,Beauty,cust_00014,5,"For the price, Delivery was quick and well tracked. Exactly what I expected.",shipping,2024-02-03
+r_0000150,p_06887,Kids Story,Books,cust_00008,2,"Overall, This kids story — Shipping took forever, arrived two weeks late. Pretty satisfied.",shipping,2025-02-05
+r_0000138,p_38778,Bluetooth Speaker,Electronics,cust_00020,1,"Not gonna lie, The bluetooth speaker is fine. Support was rude and unhelpful. Do better.",customer_service,2024-01-22
+r_mismatch_614792641,p_84321,Data Engineering Handbook,Books,cust_00009,5,"Terrible product, broke immediately and support ignored me.",shipping,2025-04-14
+r_0000009,p_52393,Turkish Grammar,Books,cust_00008,5,"Not gonna lie, Delivery was quick and well tracked. Exactly what I expected.",shipping,2024-08-12
+r_0000193,p_70738,Leather Wallet,Fashion,cust_00048,5,"Not gonna lie, This leather wallet — Customer service was helpful and quick to respond. Not sure I'd repurchase.",customer_service,2025-01-09
+r_0000066,p_52393,Turkish Grammar,Books,cust_00031,1,"After a week, Feels cheap and stopped working quickly. Five stars from me.",product_quality,2024-01-30
+r_0000137,p_60943,Water Bottle,Home & Kitchen,cust_00029,5,"Honestly, The water bottle is fine. Support resolved my issue right away. Lesson learned.",customer_service,2024-01-20
+r_0000116,p_18490,Face Serum,Beauty,cust_00013,1,"Overall, Bought the face serum. Poor quality, it broke after two days. Exactly what I expected.",product_quality,2025-07-21
+r_0000149,p_18490,Face Serum,Beauty,cust_00018,5,"Honestly, The face serum is fine. Returning was smooth and hassle-free. Pretty satisfied.",return,2025-01-30
+r_0000135,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00018,4,"After a week, Bought the vacuum cleaner. Customer service was helpful and quick to respond. Do better.",customer_service,2024-09-18
+r_0000131,p_08464,Running Shoes,Fashion,cust_00029,5,"Honestly, Bought the running shoes. Shipping was super fast, arrived a day early. Mixed feelings overall.",shipping,2025-03-05
+r_0000055,p_18490,Face Serum,Beauty,cust_00034,1,This face serum — Support was rude and unhelpful. Pretty satisfied.,customer_service,2025-03-05
+r_0000190,p_38778,Bluetooth Speaker,Electronics,cust_00012,5,"After a week, This bluetooth speaker — Well packaged, no damage at all. Not sure I'd repurchase.",packaging,2024-11-16
+r_0000196,p_60892,Lipstick,Beauty,cust_00045,4,"So far, The lipstick is fine. Delivery was quick and well tracked.",shipping,2024-05-20
+r_0000030,p_12156,Hair Dryer,Beauty,cust_00004,4,"After a week, This hair dryer — Great quality for the price, highly recommend. Mixed feelings overall.",product_quality,2024-12-23
+r_0000008,p_84321,Data Engineering Handbook,Books,cust_00009,5,"After a week, Delivery was quick and well tracked. Five stars from me.",shipping,2025-04-14
+r_0000104,p_06887,Kids Story,Books,cust_00043,4,This kids story — Great price compared to other stores. Lesson learned.,price,2025-08-02
+r_0000191,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00032,1,First impression: The vacuum cleaner is fine. Support was rude and unhelpful. Five stars from me.,customer_service,2025-02-06
+r_0000166,p_84321,Data Engineering Handbook,Books,cust_00022,4,"After a week, This data engineering handbook — Great price compared to other stores. Would buy again.",price,2024-02-15
+r_0000005,p_67841,Wireless Earbuds,Electronics,cust_00029,5,"Honestly, The wireless earbuds is fine. Returning was smooth and hassle-free. Recommended.",return,2024-10-11
+r_0000108,p_60892,Lipstick,Beauty,cust_00009,1,First impression: The lipstick is fine. The delivery was delayed and no updates were given. Pretty satisfied.,shipping,2024-03-18
+r_0000032,p_72070,Smart Watch,Electronics,cust_00013,5,"So far, This smart watch — Amazing value for money, worth every penny. Not sure I'd repurchase.",price,2025-09-11
+r_0000130,p_26506,Knife Set,Home & Kitchen,cust_00042,1,Just received it — Bought the knife set. They refused my return without a reason.,return,2025-08-02
+r_0000102,p_57944,Laptop Stand,Electronics,cust_00040,5,"Honestly, This laptop stand — Amazing value for money, worth every penny. Five stars from me.",price,2024-11-02
+r_0000040,p_94291,Sci-Fi Novel,Books,cust_00016,1,"So far, This sci-fi novel — Feels cheap and stopped working quickly. Lesson learned.",product_quality,2024-04-28
+r_0000039,p_59243,Coffee Maker,Home & Kitchen,cust_00025,2,"After a week, The coffee maker is fine. Box arrived crushed, item scratched. Recommended.",packaging,2024-07-16
+r_0000056,p_12156,Hair Dryer,Beauty,cust_00021,1,"First impression: Shipping took forever, arrived two weeks late. Lesson learned.",shipping,2025-02-02
+r_0000114,p_38778,Bluetooth Speaker,Electronics,cust_00034,2,"After a week, The bluetooth speaker is fine. The delivery was delayed and no updates were given. Pretty satisfied.",shipping,2025-01-11
+r_mismatch_831726993,p_84321,Data Engineering Handbook,Books,cust_00028,5,"Terrible product, broke immediately and support ignored me.",shipping,2024-08-15
+r_0000043,p_26506,Knife Set,Home & Kitchen,cust_00042,5,"Just received it — This knife set — Well packaged, no damage at all. Would buy again.",packaging,2024-11-12
+r_0000153,p_04220,Air Fryer,Home & Kitchen,cust_00009,5,"Just received it — Bought the air fryer. Amazing value for money, worth every penny. Exactly what I expected.",price,2025-01-20
+r_0000018,p_04978,Shampoo,Beauty,cust_00021,4,"Honestly, Bought the shampoo. Customer service was helpful and quick to respond.",customer_service,2024-02-02
+r_0000126,p_08464,Running Shoes,Fashion,cust_00003,4,"Not gonna lie, This running shoes — The build quality is excellent and it feels premium. Would buy again.",product_quality,2025-07-23
+r_0000021,p_08464,Running Shoes,Fashion,cust_00012,4,"This running shoes — Easy return process, refund came fast. Lesson learned.",return,2024-09-11
+r_0000047,p_04220,Air Fryer,Home & Kitchen,cust_00009,4,"Honestly, This air fryer — Great price compared to other stores. Recommended.",price,2024-07-22
+r_0000110,p_94291,Sci-Fi Novel,Books,cust_00035,1,"Honestly, Support was rude and unhelpful. Recommended.",customer_service,2025-09-26
+r_0000095,p_20788,Cookbook,Books,cust_00037,1,"Overall, The cookbook is fine. They refused my return without a reason. Five stars from me.",return,2025-05-29
+r_0000045,p_60943,Water Bottle,Home & Kitchen,cust_00027,1,"So far, This water bottle — Support was rude and unhelpful.",customer_service,2024-08-03
+r_0000016,p_26506,Knife Set,Home & Kitchen,cust_00025,5,"After a week, Bought the knife set. Support resolved my issue right away. Mixed feelings overall.",customer_service,2024-11-15
+r_0000099,p_57944,Laptop Stand,Electronics,cust_00022,4,This laptop stand — Delivery was quick and well tracked.,shipping,2024-10-27
+r_0000092,p_04978,Shampoo,Beauty,cust_00046,1,Just received it — This shampoo — Feels cheap and stopped working quickly. Mixed feelings overall.,product_quality,2024-10-16
+r_0000046,p_12156,Hair Dryer,Beauty,cust_00047,2,"For the price, Bought the hair dryer. They refused my return without a reason. Five stars from me.",return,2025-04-29
+r_0000163,p_08249,Sunscreen,Beauty,cust_00018,5,"So far, Bought the sunscreen. Works perfectly, exactly as described. Very happy.",product_quality,2024-05-27
+r_0000075,p_38778,Bluetooth Speaker,Electronics,cust_00009,5,"Not gonna lie, The bluetooth speaker is fine. Came in neat, secure packaging. Five stars from me.",packaging,2024-02-24
+r_0000014,p_60943,Water Bottle,Home & Kitchen,cust_00015,5,"For the price, The water bottle is fine. Support resolved my issue right away.",customer_service,2024-11-10
+r_0000024,p_88880,Denim Jacket,Fashion,cust_00018,5,"Not gonna lie, Came in neat, secure packaging.",packaging,2025-04-10
+r_0000034,p_70738,Leather Wallet,Fashion,cust_00035,5,"Overall, Bought the leather wallet. Works perfectly, exactly as described. Very happy. Do better.",product_quality,2025-03-28
+r_0000059,p_70738,Leather Wallet,Fashion,cust_00041,1,"For the price, The leather wallet is fine. The packaging was damaged and the item was dented.",packaging,2024-08-17
+r_0000064,p_60892,Lipstick,Beauty,cust_00045,2,"Honestly, This lipstick — Feels cheap and stopped working quickly. Lesson learned.",product_quality,2025-04-15
+r_0000111,p_06887,Kids Story,Books,cust_00002,4,"For the price, Shipping was super fast, arrived a day early. Do better.",shipping,2024-05-23
+r_0000084,p_38778,Bluetooth Speaker,Electronics,cust_00037,5,"For the price, Customer service was helpful and quick to respond. Mixed feelings overall.",customer_service,2024-07-04
+r_0000124,p_67841,Wireless Earbuds,Electronics,cust_00029,5,"Not gonna lie, Bought the wireless earbuds. Easy return process, refund came fast. Five stars from me.",return,2024-12-13
+r_0000185,p_60943,Water Bottle,Home & Kitchen,cust_00016,4,The water bottle is fine. Returning was smooth and hassle-free.,return,2025-08-13
+r_0000058,p_88880,Denim Jacket,Fashion,cust_00048,1,Just received it — Feels cheap and stopped working quickly. Recommended.,product_quality,2024-12-11
+r_mismatch_774597473,p_88880,Denim Jacket,Fashion,cust_00048,5,"Terrible product, broke immediately and support ignored me.",product_quality,2024-12-11
+r_0000175,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00025,2,"Honestly, Bought the vacuum cleaner. Too expensive, found it cheaper elsewhere. Exactly what I expected.",price,2025-01-10
+r_0000013,p_60943,Water Bottle,Home & Kitchen,cust_00048,4,"So far, Bought the water bottle. Works perfectly, exactly as described. Very happy. Exactly what I expected.",product_quality,2025-01-17
+r_0000077,p_60943,Water Bottle,Home & Kitchen,cust_00039,1,"First impression: Box arrived crushed, item scratched. Exactly what I expected.",packaging,2025-08-05
+r_0000072,p_70738,Leather Wallet,Fashion,cust_00011,4,"Honestly, This leather wallet — Returning was smooth and hassle-free. Recommended.",return,2025-01-04
+r_0000198,p_13523,Backpack,Fashion,cust_00019,2,"So far, They refused my return without a reason. Mixed feelings overall.",return,2025-07-30
+r_0000001,p_08249,Sunscreen,Beauty,cust_00045,5,"After a week, The sunscreen is fine. The build quality is excellent and it feels premium. Recommended.",product_quality,2024-07-22
+r_0000086,p_20788,Cookbook,Books,cust_00020,1,"Not gonna lie, The cookbook is fine. They refused my return without a reason. Mixed feelings overall.",return,2024-03-31
+r_0000144,p_94291,Sci-Fi Novel,Books,cust_00002,5,"So far, This sci-fi novel — Support resolved my issue right away. Would buy again.",customer_service,2025-04-07
+r_0000023,p_18490,Face Serum,Beauty,cust_00031,4,"Bought the face serum. Great quality for the price, highly recommend. Would buy again.",product_quality,2025-02-20
+r_0000165,p_12156,Hair Dryer,Beauty,cust_00023,5,"Not gonna lie, The hair dryer is fine. Customer service was helpful and quick to respond. Five stars from me.",customer_service,2025-01-31
+r_0000050,p_48072,USB-C Hub,Electronics,cust_00046,5,"Overall, This usb-c hub — Delivery was quick and well tracked. Five stars from me.",shipping,2025-09-19
+r_0000171,p_13523,Backpack,Fashion,cust_00019,5,Just received it — The backpack is fine. Delivery was quick and well tracked. Would buy again.,shipping,2024-10-29
+r_0000154,p_59243,Coffee Maker,Home & Kitchen,cust_00028,5,"For the price, Easy return process, refund came fast.",return,2024-08-31
+r_0000158,p_84321,Data Engineering Handbook,Books,cust_00028,1,"So far, The delivery was delayed and no updates were given. Not sure I'd repurchase.",shipping,2024-08-15
+r_0000022,p_60943,Water Bottle,Home & Kitchen,cust_00028,4,"Overall, Well packaged, no damage at all. Do better.",packaging,2024-03-18
+r_spam_183085932,p_08464,Running Shoes,Fashion,cust_00033,1,"Overall, Bought the running shoes. Not as described, the material is low quality. Would buy again.",product_quality,2025-10-01
+r_0000068,p_48072,USB-C Hub,Electronics,cust_00041,5,"Not gonna lie, Bought the usb-c hub. Shipping was super fast, arrived a day early. Five stars from me.",shipping,2025-05-02
+r_0000121,p_60892,Lipstick,Beauty,cust_00031,5,"Came in neat, secure packaging. Five stars from me.",packaging,2024-04-20
+r_0000141,p_48072,USB-C Hub,Electronics,cust_00016,4,Just received it — Bought the usb-c hub. Support resolved my issue right away. Not sure I'd repurchase.,customer_service,2024-05-29
+r_0000103,p_70738,Leather Wallet,Fashion,cust_00036,1,"Not gonna lie, The leather wallet is fine. The packaging was damaged and the item was dented. Five stars from me.",packaging,2025-01-25
+r_0000011,p_13523,Backpack,Fashion,cust_00048,5,"So far, The backpack is fine. Well packaged, no damage at all.",packaging,2025-07-03
+r_0000007,p_56190,Wool Scarf,Fashion,cust_00025,4,"Just received it — Bought the wool scarf. Amazing value for money, worth every penny.",price,2024-11-19
+r_0000082,p_08464,Running Shoes,Fashion,cust_00038,5,"Not gonna lie, Well packaged, no damage at all. Do better.",packaging,2024-03-23
+r_0000100,p_20788,Cookbook,Books,cust_00024,4,"Overall, Bought the cookbook. Delivery was quick and well tracked. Not sure I'd repurchase.",shipping,2025-09-16
+r_0000041,p_60943,Water Bottle,Home & Kitchen,cust_00032,5,"Not gonna lie, This water bottle — Amazing value for money, worth every penny. Pretty satisfied.",price,2025-09-12
+r_0000036,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00042,4,Just received it — This vacuum cleaner — Delivery was quick and well tracked.,shipping,2024-09-12
+r_0000178,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00045,5,"Just received it — This vacuum cleaner — Works perfectly, exactly as described. Very happy. Would buy again.",product_quality,2024-06-10
+r_0000025,p_13523,Backpack,Fashion,cust_00037,4,"Overall, This backpack — Returning was smooth and hassle-free. Recommended.",return,2024-02-29
+r_0000106,p_52393,Turkish Grammar,Books,cust_00046,5,"First impression: The turkish grammar is fine. Easy return process, refund came fast. Five stars from me.",return,2025-01-08
+r_0000129,p_84321,Data Engineering Handbook,Books,cust_00001,5,"Not gonna lie, The data engineering handbook is fine. Amazing value for money, worth every penny. Mixed feelings overall.",price,2024-09-30
+r_0000157,p_26506,Knife Set,Home & Kitchen,cust_00007,5,"Just received it — The knife set is fine. Works perfectly, exactly as described. Very happy. Mixed feelings overall.",product_quality,2025-06-12
+r_0000182,p_60943,Water Bottle,Home & Kitchen,cust_00009,4,"Overall, The water bottle is fine. Easy return process, refund came fast. Lesson learned.",return,2025-06-14
+r_0000118,p_04220,Air Fryer,Home & Kitchen,cust_00001,5,"Bought the air fryer. Easy return process, refund came fast. Pretty satisfied.",return,2024-11-27
+r_0000140,p_13523,Backpack,Fashion,cust_00032,1,Just received it — This backpack — Feels cheap and stopped working quickly. Recommended.,product_quality,2024-03-19
+r_0000152,p_84321,Data Engineering Handbook,Books,cust_00008,1,"After a week, Overpriced for what you get. Pretty satisfied.",price,2024-08-19
+r_0000000,p_67841,Wireless Earbuds,Electronics,cust_00005,2,"After a week, The wireless earbuds is fine. Return was a nightmare, still waiting for a refund. Not sure I'd repurchase.",return,2025-07-12
+r_0000017,p_20788,Cookbook,Books,cust_00037,1,"After a week, The cookbook is fine. Customer service never replied to my emails. Recommended.",customer_service,2024-01-22
+r_0000098,p_48072,USB-C Hub,Electronics,cust_00048,5,"First impression: The usb-c hub is fine. Great quality for the price, highly recommend. Recommended.",product_quality,2024-04-10
+r_0000173,p_70738,Leather Wallet,Fashion,cust_00038,4,"Not gonna lie, Bought the leather wallet. Easy return process, refund came fast. Pretty satisfied.",return,2024-05-26
+r_0000119,p_26506,Knife Set,Home & Kitchen,cust_00030,5,"Not gonna lie, The knife set is fine. Great quality for the price, highly recommend. Mixed feelings overall.",product_quality,2024-03-06
+r_0000060,p_67841,Wireless Earbuds,Electronics,cust_00030,4,Bought the wireless earbuds. The build quality is excellent and it feels premium. Exactly what I expected.,product_quality,2024-05-09
+r_0000091,p_20788,Cookbook,Books,cust_00038,1,"For the price, Bought the cookbook. The packaging was damaged and the item was dented. Mixed feelings overall.",packaging,2024-07-14
+r_0000042,p_57944,Laptop Stand,Electronics,cust_00043,5,The laptop stand is fine. Support resolved my issue right away. Lesson learned.,customer_service,2025-07-05
+r_0000195,p_13523,Backpack,Fashion,cust_00021,5,"Honestly, The backpack is fine. Well packaged, no damage at all. Not sure I'd repurchase.",packaging,2025-01-17
+r_0000127,p_12156,Hair Dryer,Beauty,cust_00018,2,"Not gonna lie, Customer service never replied to my emails. Pretty satisfied.",customer_service,2024-02-22
+r_0000006,p_52393,Turkish Grammar,Books,cust_00010,2,First impression: Bought the turkish grammar. Overpriced for what you get. Would buy again.,price,2024-09-07
+r_0000029,p_52393,Turkish Grammar,Books,cust_00029,1,First impression: This turkish grammar — Overpriced for what you get. Five stars from me.,price,2024-01-10
+r_0000168,p_52393,Turkish Grammar,Books,cust_00016,5,Just received it — The build quality is excellent and it feels premium. Do better.,product_quality,2025-04-29
+r_mismatch_882252092,p_38778,Bluetooth Speaker,Electronics,cust_00011,5,"Terrible product, broke immediately and support ignored me.",customer_service,2024-01-26
+r_0000181,p_56190,Wool Scarf,Fashion,cust_00022,5,Just received it — Customer service was helpful and quick to respond. Would buy again.,customer_service,2025-06-13
+r_0000115,p_84321,Data Engineering Handbook,Books,cust_00041,2,"Honestly, The data engineering handbook is fine. The packaging was damaged and the item was dented. Five stars from me.",packaging,2024-08-05
+r_0000085,p_56190,Wool Scarf,Fashion,cust_00010,2,"Not gonna lie, This wool scarf — Feels cheap and stopped working quickly. Pretty satisfied.",product_quality,2024-04-17
+r_0000012,p_94291,Sci-Fi Novel,Books,cust_00032,2,"Overall, The sci-fi novel is fine. Feels cheap and stopped working quickly. Five stars from me.",product_quality,2024-09-26
+r_0000062,p_18490,Face Serum,Beauty,cust_00006,5,"Not gonna lie, The face serum is fine. Great price compared to other stores. Recommended.",price,2024-09-05
+r_0000061,p_48072,USB-C Hub,Electronics,cust_00006,1,Just received it — The usb-c hub is fine. The delivery was delayed and no updates were given. Not sure I'd repurchase.,shipping,2024-11-14
+r_0000027,p_48072,USB-C Hub,Electronics,cust_00015,4,"Honestly, The build quality is excellent and it feels premium. Recommended.",product_quality,2025-08-06
+r_0000189,p_18490,Face Serum,Beauty,cust_00006,4,"Honestly, Great price compared to other stores. Do better.",price,2024-05-24
+r_0000133,p_38778,Bluetooth Speaker,Electronics,cust_00013,5,"For the price, Well packaged, no damage at all. Exactly what I expected.",packaging,2024-10-06
+r_0000069,p_56190,Wool Scarf,Fashion,cust_00023,5,"After a week, Bought the wool scarf. Works perfectly, exactly as described. Very happy. Lesson learned.",product_quality,2025-08-18
+r_0000051,p_08249,Sunscreen,Beauty,cust_00049,1,"For the price, This sunscreen — Customer service never replied to my emails. Five stars from me.",customer_service,2024-10-10
+r_0000054,p_56190,Wool Scarf,Fashion,cust_00049,5,"Not gonna lie, Bought the wool scarf. Great price compared to other stores.",price,2025-02-02
+r_0000155,p_60892,Lipstick,Beauty,cust_00023,1,"So far, This lipstick — Return was a nightmare, still waiting for a refund. Recommended.",return,2024-07-17
+r_0000065,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00017,5,"So far, Delivery was quick and well tracked. Five stars from me.",shipping,2025-08-29
+r_0000113,p_08249,Sunscreen,Beauty,cust_00017,5,"Not gonna lie, Customer service was helpful and quick to respond. Would buy again.",customer_service,2025-02-21
+r_0000145,p_38778,Bluetooth Speaker,Electronics,cust_00047,5,"So far, Amazing value for money, worth every penny. Lesson learned.",price,2025-07-21
+r_0000020,p_88880,Denim Jacket,Fashion,cust_00026,1,"Honestly, The packaging was damaged and the item was dented. Would buy again.",packaging,2025-03-09
+r_0000151,p_18490,Face Serum,Beauty,cust_00032,5,Just received it — The face serum is fine. Great price compared to other stores. Not sure I'd repurchase.,price,2025-03-09
+r_0000010,p_08249,Sunscreen,Beauty,cust_00024,5,"Overall, The build quality is excellent and it feels premium. Not sure I'd repurchase.",product_quality,2024-03-06
+r_0000074,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00011,5,"First impression: Great quality for the price, highly recommend. Five stars from me.",product_quality,2024-12-14
+r_0000037,p_38778,Bluetooth Speaker,Electronics,cust_00011,1,"After a week, Bought the bluetooth speaker. Customer service never replied to my emails. Not sure I'd repurchase.",customer_service,2024-01-26
+r_0000088,p_60892,Lipstick,Beauty,cust_00018,2,This lipstick — Support was rude and unhelpful. Recommended.,customer_service,2024-05-14
+r_0000101,p_04978,Shampoo,Beauty,cust_00042,5,"After a week, This shampoo — Came in neat, secure packaging. Five stars from me.",packaging,2024-09-18
+r_0000097,p_70738,Leather Wallet,Fashion,cust_00034,5,"Honestly, Great price compared to other stores. Pretty satisfied.",price,2025-05-14
+r_0000172,p_13523,Backpack,Fashion,cust_00039,1,"For the price, Return was a nightmare, still waiting for a refund. Pretty satisfied.",return,2024-12-27
+r_0000146,p_57944,Laptop Stand,Electronics,cust_00003,5,Just received it — Customer service was helpful and quick to respond. Exactly what I expected.,customer_service,2024-06-03
+r_0000031,p_26506,Knife Set,Home & Kitchen,cust_00019,5,"So far, The knife set is fine. Great price compared to other stores. Do better.",price,2025-07-21
+r_0000159,p_84321,Data Engineering Handbook,Books,cust_00023,5,"So far, Bought the data engineering handbook. Well packaged, no damage at all. Pretty satisfied.",packaging,2024-03-24
+r_0000070,p_13523,Backpack,Fashion,cust_00017,2,"So far, This backpack — Support was rude and unhelpful. Pretty satisfied.",customer_service,2025-04-09
+r_0000183,p_52393,Turkish Grammar,Books,cust_00012,1,"Just received it — This turkish grammar — Shipping took forever, arrived two weeks late. Mixed feelings overall.",shipping,2024-09-13
+r_0000089,p_56190,Wool Scarf,Fashion,cust_00035,5,"After a week, This wool scarf — Great quality for the price, highly recommend. Not sure I'd repurchase.",product_quality,2024-01-15
+r_0000187,p_40577,Vacuum Cleaner,Home & Kitchen,cust_00029,1,Overpriced for what you get. Not sure I'd repurchase.,price,2025-05-10
+r_0000081,p_59243,Coffee Maker,Home & Kitchen,cust_00018,5,"This coffee maker — Amazing value for money, worth every penny. Not sure I'd repurchase.",price,2025-08-05
+r_0000125,p_56190,Wool Scarf,Fashion,cust_00043,5,"Not gonna lie, This wool scarf — Returning was smooth and hassle-free. Pretty satisfied.",return,2024-06-05
+r_0000184,p_60892,Lipstick,Beauty,cust_00009,5,"So far, Bought the lipstick. Delivery was quick and well tracked. Would buy again.",shipping,2025-08-17
+r_0000073,p_84321,Data Engineering Handbook,Books,cust_00044,5,"First impression: The data engineering handbook is fine. Easy return process, refund came fast.",return,2024-10-26
+r_0000162,p_12156,Hair Dryer,Beauty,cust_00026,4,"After a week, The hair dryer is fine. Well packaged, no damage at all. Do better.",packaging,2024-09-01
+r_0000057,p_88880,Denim Jacket,Fashion,cust_00008,4,"Not gonna lie, The denim jacket is fine. Came in neat, secure packaging. Exactly what I expected.",packaging,2025-03-14
+r_0000076,p_60943,Water Bottle,Home & Kitchen,cust_00039,5,"Honestly, Amazing value for money, worth every penny. Mixed feelings overall.",price,2025-09-02
+r_0000142,p_59243,Coffee Maker,Home & Kitchen,cust_00028,5,"Overall, Customer service was helpful and quick to respond. Five stars from me.",customer_service,2025-08-16
+r_0000071,p_94291,Sci-Fi Novel,Books,cust_00047,4,"Just received it — Bought the sci-fi novel. Shipping was super fast, arrived a day early. Would buy again.",shipping,2024-08-09
+r_0000063,p_06887,Kids Story,Books,cust_00004,5,Just received it — The build quality is excellent and it feels premium. Mixed feelings overall.,product_quality,2025-01-14
+r_0000049,p_88880,Denim Jacket,Fashion,cust_00029,4,"Honestly, Bought the denim jacket. Shipping was super fast, arrived a day early. Lesson learned.",shipping,2025-06-14
+r_0000123,p_12156,Hair Dryer,Beauty,cust_00027,2,"So far, They refused my return without a reason. Do better.",return,2025-09-11
+r_0000192,p_88880,Denim Jacket,Fashion,cust_00041,5,This denim jacket — Delivery was quick and well tracked.,shipping,2025-09-03
+r_0000067,p_52393,Turkish Grammar,Books,cust_00035,5,"First impression: This turkish grammar — Well packaged, no damage at all. Pretty satisfied.",packaging,2024-10-09
+r_0000164,p_08464,Running Shoes,Fashion,cust_00004,2,"Not gonna lie, The running shoes is fine. Customer service never replied to my emails. Not sure I'd repurchase.",customer_service,2025-01-04
+r_0000090,p_08464,Running Shoes,Fashion,cust_00032,5,"Honestly, Delivery was quick and well tracked. Not sure I'd repurchase.",shipping,2024-10-25
+r_0000139,p_60943,Water Bottle,Home & Kitchen,cust_00037,4,"Honestly, The water bottle is fine. Well packaged, no damage at all. Lesson learned.",packaging,2025-03-22
+r_0000087,p_94291,Sci-Fi Novel,Books,cust_00012,1,"Not as described, the material is low quality. Mixed feelings overall.",product_quality,2024-02-25
+r_0000136,p_84321,Data Engineering Handbook,Books,cust_00045,1,"Not gonna lie, Bought the data engineering handbook. Not as described, the material is low quality. Not sure I'd repurchase.",product_quality,2025-06-29
+r_0000117,p_04978,Shampoo,Beauty,cust_00016,1,"Bought the shampoo. Shipping took forever, arrived two weeks late. Do better.",shipping,2025-07-07
+r_0000044,p_70738,Leather Wallet,Fashion,cust_00043,5,"So far, Bought the leather wallet. Well packaged, no damage at all. Not sure I'd repurchase.",packaging,2025-01-23
+r_spam_840636753,p_60892,Lipstick,Beauty,cust_00049,4,"For the price, Bought the lipstick. Returning was smooth and hassle-free. Not sure I'd repurchase.",return,2025-04-13
+r_0000096,p_84321,Data Engineering Handbook,Books,cust_00004,5,"Well packaged, no damage at all. Not sure I'd repurchase.",packaging,2024-06-07
+r_0000134,p_18490,Face Serum,Beauty,cust_00002,2,First impression: Overpriced for what you get. Exactly what I expected.,price,2024-11-11
+r_0000122,p_08464,Running Shoes,Fashion,cust_00040,1,"Overall, Bought the running shoes. Not as described, the material is low quality. Would buy again.",product_quality,2025-10-01
+r_0000169,p_72070,Smart Watch,Electronics,cust_00025,1,Just received it — The smart watch is fine. Overpriced for what you get. Do better.,price,2025-03-23
+r_0000083,p_57944,Laptop Stand,Electronics,cust_00037,2,Bought the laptop stand. They refused my return without a reason. Would buy again.,return,2025-08-12
+r_0000143,p_12156,Hair Dryer,Beauty,cust_00040,5,"Overall, The hair dryer is fine. Great price compared to other stores. Five stars from me.",price,2025-03-28
+r_0000053,p_06887,Kids Story,Books,cust_00004,5,"After a week, Bought the kids story. The build quality is excellent and it feels premium. Lesson learned.",product_quality,2024-08-07
+r_0000132,p_52393,Turkish Grammar,Books,cust_00003,1,"Honestly, Bought the turkish grammar. Too expensive, found it cheaper elsewhere.",price,2025-09-24
+r_0000035,p_13523,Backpack,Fashion,cust_00035,5,"Overall, The backpack is fine. The build quality is excellent and it feels premium. Mixed feelings overall.",product_quality,2025-08-19
+r_0000180,p_12156,Hair Dryer,Beauty,cust_00033,1,"Honestly, This hair dryer — Overpriced for what you get. Would buy again.",price,2025-05-05
+r_0000015,p_72070,Smart Watch,Electronics,cust_00035,4,"For the price, Bought the smart watch. Customer service was helpful and quick to respond. Would buy again.",customer_service,2025-05-01
+r_0000186,p_60943,Water Bottle,Home & Kitchen,cust_00030,5,"For the price, This water bottle — Came in neat, secure packaging. Mixed feelings overall.",packaging,2024-11-05
+r_0000188,p_26506,Knife Set,Home & Kitchen,cust_00032,4,Just received it — Support resolved my issue right away. Pretty satisfied.,customer_service,2025-01-14
+r_0000120,p_70738,Leather Wallet,Fashion,cust_00046,5,"For the price, Bought the leather wallet. Customer service was helpful and quick to respond. Mixed feelings overall.",customer_service,2024-02-14
+r_0000156,p_08249,Sunscreen,Beauty,cust_00038,1,"So far, Box arrived crushed, item scratched. Mixed feelings overall.",packaging,2024-07-23
+r_0000128,p_60892,Lipstick,Beauty,cust_00035,4,"Overall, Bought the lipstick. Amazing value for money, worth every penny. Five stars from me.",price,2024-12-24
+r_0000197,p_20788,Cookbook,Books,cust_00010,2,"So far, This cookbook — Customer service never replied to my emails. Not sure I'd repurchase.",customer_service,2024-11-22
+r_0000052,p_08249,Sunscreen,Beauty,cust_00021,4,"For the price, This sunscreen — Returning was smooth and hassle-free. Would buy again.",return,2024-10-05
+r_0000176,p_94291,Sci-Fi Novel,Books,cust_00016,5,"Overall, Shipping was super fast, arrived a day early. Five stars from me.",shipping,2024-04-30
+r_0000105,p_48072,USB-C Hub,Electronics,cust_00039,1,"After a week, This usb-c hub — They refused my return without a reason. Exactly what I expected.",return,2024-07-13
+r_0000038,p_20788,Cookbook,Books,cust_00030,5,"First impression: The cookbook is fine. Easy return process, refund came fast. Not sure I'd repurchase.",return,2024-02-09
+r_0000107,p_04220,Air Fryer,Home & Kitchen,cust_00033,2,"Overall, Bought the air fryer. Too expensive, found it cheaper elsewhere. Recommended.",price,2025-01-09
+r_0000080,p_94291,Sci-Fi Novel,Books,cust_00034,1,"After a week, Bought the sci-fi novel. Return was a nightmare, still waiting for a refund. Do better.",return,2024-04-27
+r_0000112,p_38778,Bluetooth Speaker,Electronics,cust_00023,5,"After a week, Bought the bluetooth speaker. Came in neat, secure packaging. Mixed feelings overall.",packaging,2025-04-09
+r_0000004,p_13523,Backpack,Fashion,cust_00045,2,"So far, This backpack — Poor quality, it broke after two days. Do better.",product_quality,2024-07-15
+r_0000048,p_67841,Wireless Earbuds,Electronics,cust_00031,2,"For the price, Bought the wireless earbuds. Shipping took forever, arrived two weeks late. Lesson learned.",shipping,2025-01-28
+r_0000028,p_12156,Hair Dryer,Beauty,cust_00042,5,"Not gonna lie, This hair dryer — The build quality is excellent and it feels premium. Exactly what I expected.",product_quality,2024-07-28
+r_0000179,p_26506,Knife Set,Home & Kitchen,cust_00023,5,"After a week, Bought the knife set. Customer service was helpful and quick to respond. Not sure I'd repurchase.",customer_service,2024-01-27

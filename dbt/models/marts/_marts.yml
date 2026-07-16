@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_reviews
+    description: "Fact reviews joined to product / category / date dimensions."
+    columns:
+      - name: review_id
+        tests: [not_null, unique]
+      - name: sentiment_label
+        tests:
+          - accepted_values: { values: ["positive", "neutral", "negative"] }
+
+  - name: mart_category_sentiment
+    description: "Sentiment & rating per product category."
+    columns:
+      - name: category_name
+        tests: [not_null, unique]
+      - name: reviews
+        tests: [not_null]
+
+  - name: mart_daily_trends
+    description: "Daily review volume + 7-day rolling average rating."
+    columns:
+      - name: review_date
+        tests: [not_null, unique]

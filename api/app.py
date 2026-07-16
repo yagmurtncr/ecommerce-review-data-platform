@@ -33,7 +33,7 @@ def _query(sql: str, params=None):
         cur = conn.cursor()
         cur.execute(sql, params or ())
         cols = [c[0] for c in cur.description]
-        rows = [dict(zip(cols, r)) for r in cur.fetchall()]
+        rows = [dict(zip(cols, r, strict=False)) for r in cur.fetchall()]
         return rows
     finally:
         conn.close()

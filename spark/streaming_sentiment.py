@@ -11,8 +11,6 @@ Run:  spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
 """
 from __future__ import annotations
 
-import json
-
 from pyspark.sql import functions as F
 from pyspark.sql import types as T
 
@@ -36,7 +34,7 @@ def _score_partition(rows):
     texts = [r["review_text"] for r in rows]
     scored = score_batch(texts)
     out = []
-    for r, s in zip(rows, scored):
+    for r, s in zip(rows, scored, strict=False):
         out.append((r["review_id"], r.get("category"), r.get("rating"),
                     s["stars"], s["label"]))
     return iter(out)

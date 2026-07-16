@@ -27,15 +27,14 @@ def _label(stars: int) -> str:
 @lru_cache(maxsize=1)
 def _load_model():
     """Return (tokenizer, model) or None if weights are unavailable."""
+    import os
+
+    if not os.path.isdir(settings.SENTIMENT_MODEL_PATH):
+        return None  # no weights -> lexicon fallback, avoid heavy torch import
     try:
-        import os
-
         import torch  # noqa: F401
-        from transformers import (AutoModelForSequenceClassification,
-                                  AutoTokenizer)
+        from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-        if not os.path.isdir(settings.SENTIMENT_MODEL_PATH):
-            return None
         tok = AutoTokenizer.from_pretrained(settings.SENTIMENT_MODEL_PATH)
         mdl = AutoModelForSequenceClassification.from_pretrained(settings.SENTIMENT_MODEL_PATH)
         mdl.eval()

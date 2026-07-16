@@ -1,0 +1,14 @@
+# Copy to ~/.dbt/profiles.yml (or set DBT_PROFILES_DIR) and adjust.
+# Points dbt at the platform's PostgreSQL warehouse (see docker-compose.yml).
+reviews_dw:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: dw
+      password: dw
+      dbname: reviews_dw
+      schema: analytics
+      threads: 4
